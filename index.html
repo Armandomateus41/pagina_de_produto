@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>página de produto</title>
+    <title>Página de produto</title>
     <link rel="stylesheet" href="custom.css" />
     <link
       rel="stylesheet"
@@ -29,7 +29,7 @@
             login / cadastro
           </a>
           <input type="text"  placeholder="Busar produto">
-          <button type="submit">Buscar</button> <!-- bu-->
+          <button type="submit">Buscar</button> <!-- buscador-->
           <div class="cart">
             <a href="#"><i class="fas fa-shopping-cart"></i> Carrinho</a>
             <span>0</span>
@@ -37,8 +37,68 @@
         </div>
       </div>
     </header>
-    <main>
-      <h1>página de produto</h1>
+    <main class="container">
+     
+      <div class="product-details"></div>
+      <!--IMAGEM-->
+      <div class="product-gallery">
+        <img src="img/fone_destaque.png" alt="produto" />
+        <!--GALERIA-->
+        <div class="gallery-thumbnails">
+          <img src="img/fone1.png" alt="produto1" />
+          <img src="img/fone2.png" alt="produto2" />
+          <img src="img/fone3.png" alt="produto3" />
+      </div>
+      <!--INFORMAÇÃO-->
+      <div class="product-info"></div>
+      <p class="product-path">
+        <i class="fas fa-shopping-cart"></i>
+        Tecnologia / fones / sem fios
+      </p>
+      <h2>Fone de ouvido Wireless Bluetooth com Microfone</h2>
+      <p>
+        O Fone de Ouvido Wireless Bluetooth com Microfone AM SERVIÇOS é ideal para quem deseja ter um
+        aparelho de som com excelente qualidade e um atendimento confiável.
+      </p>
+      <p class="product-code">Codigo do produto: 9843984</p>
+      <div class="product-price">
+        <span class="old-price">R$ 399,99</span>
+        <span class="new-price">R$ 349,99</span>
+      </div>
+     <p class="rating">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star-half-alt"></i>
+      (5 avaliações)
+     </p>
+     <p class="product-description">
+      O Fone de Ouvido Wireless Bluetooth com Microfone AM SERVIÇOS possui um design elegante e
+      confortável, com uma altura de 1,5 cm e um peso de 150g. O aparelho possui um microfone de 3,5mm
+      com 24db e um amplificador de 18db, garantindo uma qualidade de som excelente.
+     </p>
+     <div class="product-colors">
+       <span>Cor: Azul</span>
+       <span>Cor: Vermelho</span>
+       <span>Cor: Verde</span>
+       <span>Cor: Amarelo</span>
+       <span>Cor: Rosa</span>
+       <span>Cor: Laranja</span>
+     </div>
+     <form action="#">
+       <label for="quantity">Quantidade:</label>
+       <input type="number" id="quantity" min="1" max="10" value="1" />
+       <button type="submit">Adicionar ao carrinho</button>
+       <button type="button">Comprar agora</button>
+       <button type="button" class="compare">Comparar</button>
+       <button type="button" class="add-to-wishlist">Adicionar à wishlist</button>
+       <p class="delivery">
+      <i class="fas fa-truck">
+        Entrega grátis para compras acima de R$ 100,000
+      </i>
+       </p>
+     </form>
     </main>
   </body>
 </html>
